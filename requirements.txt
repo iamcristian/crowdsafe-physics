@@ -1,0 +1,10 @@
+numpy>=1.24,<3
+scipy>=1.10,<2
+matplotlib>=3.7,<4
+fastapi>=0.110,<1
+# The standard extra provides the WebSocket protocol implementation used by
+# the live dashboard. Plain uvicorn can serve HTTP but silently rejects /ws.
+uvicorn[standard]>=0.27,<1
+pydantic>=2.6,<3
+pytest>=8,<10
+httpx>=0.27,<1

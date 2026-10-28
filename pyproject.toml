@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crowdsafe-physics"
+version = "0.1.0"
+description = "Reproducible social-force evacuation experiments and evolutionary pillar design"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "CrowdSafe-Physics contributors"}]
+dynamic = ["dependencies"]
+
+[project.scripts]
+crowdsafe = "src.cli:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.setuptools.package-data]
+"src.visualization" = ["*.html", "*.js", "*.css"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["."]

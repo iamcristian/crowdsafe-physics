@@ -1,0 +1,5522 @@
+{
+  "config": {
+    "n_agents": 60,
+    "desired_speed": 1.0,
+    "dt": 0.0015,
+    "duration": 90.0,
+    "sample_interval": 0.15,
+    "seed": 31,
+    "method": "euler",
+    "physics": {
+      "mass": 80.0,
+      "tau": 0.5,
+      "A": 2000.0,
+      "B": 0.08,
+      "k": 120000.0,
+      "kappa": 240000.0,
+      "radius": 0.3,
+      "radius_spread": 0.02,
+      "max_speed": 12.0,
+      "risk_threshold": 1600.0
+    },
+    "room": {
+      "width": 8.0,
+      "height": 8.0,
+      "exit_width": 1.0,
+      "pillars": [],
+      "interior_segments": []
+    }
+  },
+  "metrics": {
+    "n_agents": 60,
+    "evacuated": 58,
+    "observed_time": 90.0,
+    "t90": 79.53087280587762,
+    "total_evacuation_time": null,
+    "censored": true,
+    "restricted_mean_evacuation_time": 38.90240771504675,
+    "peak_pressure": 2429.53964781277,
+    "mean_pressure": 395.9743082721967,
+    "peak_boundary_inclusive_pressure": 2436.5492609639705,
+    "exposure_agent_seconds": 2.6340000000000305,
+    "mean_flow_rate": 0.6444444444444445,
+    "velocity_clamp_count": 0,
+    "max_pair_overlap": 0.00596430684799909,
+    "arch_duration": 0.0,
+    "longest_arch": 0.0,
+    "arch_episodes": 0
+  },
+  "telemetry": [
+    {
+      "time": 0.0,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 707.00666512562,
+      "peak_pressure": 1233.3269914932696,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 0.1500000000000001,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 514.142808492078,
+      "peak_pressure": 883.037884627938,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 0.3000000000000002,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 381.19080367930485,
+      "peak_pressure": 721.8743920613894,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 0.45000000000000034,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 325.980179643493,
+      "peak_pressure": 707.1606476566009,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 0.5999999999999968,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 275.4921962406955,
+      "peak_pressure": 776.6207422118422,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 0.7499999999999913,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 228.25770206058687,
+      "peak_pressure": 535.6684304098688,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 0.8999999999999859,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 197.17714159080697,
+      "peak_pressure": 482.56863226375384,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 1.0499999999999843,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 182.8336703346134,
+      "peak_pressure": 465.77717647749785,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 1.19999999999999,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 167.99665362882598,
+      "peak_pressure": 425.2579574201182,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 1.3499999999999956,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 156.2435966752427,
+      "peak_pressure": 320.44126684882343,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 1.5000000000000013,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 147.8841285012629,
+      "peak_pressure": 306.7265210427594,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 1.650000000000007,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 142.83291670887223,
+      "peak_pressure": 305.01667585278346,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 1.8000000000000127,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 141.71549325444695,
+      "peak_pressure": 332.7402306949925,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 1.9500000000000184,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 141.95276490230268,
+      "peak_pressure": 371.62720246655454,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 2.100000000000024,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 144.24503402806175,
+      "peak_pressure": 400.22254864605793,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 2.2500000000000298,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 167.3066463671485,
+      "peak_pressure": 764.5891119331469,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 2.4000000000000354,
+      "remaining": 60,
+      "evacuated": 0,
+      "mean_pressure": 179.46852083495958,
+      "peak_pressure": 863.801134785183,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 2.550000000000041,
+      "remaining": 59,
+      "evacuated": 1,
+      "mean_pressure": 181.65953293775362,
+      "peak_pressure": 764.3801528245665,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 2.700000000000047,
+      "remaining": 59,
+      "evacuated": 1,
+      "mean_pressure": 203.7700574158394,
+      "peak_pressure": 579.146300453717,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 2.8500000000000525,
+      "remaining": 59,
+      "evacuated": 1,
+      "mean_pressure": 245.36878933809555,
+      "peak_pressure": 978.2030327333954,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 3.000000000000058,
+      "remaining": 59,
+      "evacuated": 1,
+      "mean_pressure": 277.63256409635727,
+      "peak_pressure": 1125.1718927781235,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 3.150000000000064,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 325.58770082408995,
+      "peak_pressure": 1218.4847551777832,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 3.3000000000000695,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 338.98805427482523,
+      "peak_pressure": 1185.2331674609018,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 3.4500000000000752,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 377.39183242097107,
+      "peak_pressure": 1153.938983041566,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 3.600000000000081,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 412.17991964217634,
+      "peak_pressure": 1115.3994378525576,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 3.7500000000000866,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 442.2670479245991,
+      "peak_pressure": 1305.053628439922,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 3.9000000000000923,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 462.1950219028393,
+      "peak_pressure": 1416.3742972930854,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 4.0500000000000975,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 477.0258608000518,
+      "peak_pressure": 1287.729253273753,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 4.200000000000103,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 491.0667538372262,
+      "peak_pressure": 1412.1920385966084,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 4.350000000000109,
+      "remaining": 58,
+      "evacuated": 2,
+      "mean_pressure": 505.49980225100006,
+      "peak_pressure": 1369.0100781099354,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 4.500000000000115,
+      "remaining": 57,
+      "evacuated": 3,
+      "mean_pressure": 525.2113171622191,
+      "peak_pressure": 1367.162913238461,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 4.65000000000012,
+      "remaining": 57,
+      "evacuated": 3,
+      "mean_pressure": 545.1338862656862,
+      "peak_pressure": 1679.35258306276,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 4.800000000000126,
+      "remaining": 57,
+      "evacuated": 3,
+      "mean_pressure": 558.407741428282,
+      "peak_pressure": 1583.7889977297375,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 4.950000000000132,
+      "remaining": 57,
+      "evacuated": 3,
+      "mean_pressure": 561.2692261306607,
+      "peak_pressure": 1555.7913343332611,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 5.100000000000137,
+      "remaining": 57,
+      "evacuated": 3,
+      "mean_pressure": 555.4902104838368,
+      "peak_pressure": 1622.51404366118,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 5.250000000000143,
+      "remaining": 57,
+      "evacuated": 3,
+      "mean_pressure": 531.5552525606577,
+      "peak_pressure": 1134.3173970133146,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 5.400000000000149,
+      "remaining": 56,
+      "evacuated": 4,
+      "mean_pressure": 554.1605634477521,
+      "peak_pressure": 1633.9116499945803,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 5.550000000000154,
+      "remaining": 56,
+      "evacuated": 4,
+      "mean_pressure": 566.6762964151741,
+      "peak_pressure": 1548.9153116483337,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 5.70000000000016,
+      "remaining": 56,
+      "evacuated": 4,
+      "mean_pressure": 570.1991442657379,
+      "peak_pressure": 1388.7038741464123,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 5.850000000000166,
+      "remaining": 55,
+      "evacuated": 5,
+      "mean_pressure": 577.740755918234,
+      "peak_pressure": 1422.2946890966991,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 6.000000000000171,
+      "remaining": 55,
+      "evacuated": 5,
+      "mean_pressure": 612.3401749578471,
+      "peak_pressure": 1362.4279151371304,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 6.150000000000177,
+      "remaining": 55,
+      "evacuated": 5,
+      "mean_pressure": 622.8444046476698,
+      "peak_pressure": 1862.4562469061902,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 6.300000000000183,
+      "remaining": 55,
+      "evacuated": 5,
+      "mean_pressure": 607.8407310846313,
+      "peak_pressure": 1812.403731134326,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 6.4500000000001885,
+      "remaining": 54,
+      "evacuated": 6,
+      "mean_pressure": 593.7911901700847,
+      "peak_pressure": 1433.942376980662,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 6.600000000000194,
+      "remaining": 54,
+      "evacuated": 6,
+      "mean_pressure": 580.5354610707861,
+      "peak_pressure": 1443.7240939452684,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 6.7500000000002,
+      "remaining": 54,
+      "evacuated": 6,
+      "mean_pressure": 599.0029707205739,
+      "peak_pressure": 1904.5749209402613,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 6.9000000000002055,
+      "remaining": 54,
+      "evacuated": 6,
+      "mean_pressure": 599.663121641999,
+      "peak_pressure": 1635.6126748851302,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 7.050000000000211,
+      "remaining": 54,
+      "evacuated": 6,
+      "mean_pressure": 575.0206149570591,
+      "peak_pressure": 1388.8926500282835,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 7.200000000000217,
+      "remaining": 54,
+      "evacuated": 6,
+      "mean_pressure": 554.9110514545927,
+      "peak_pressure": 1242.7947832589145,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 7.350000000000223,
+      "remaining": 53,
+      "evacuated": 7,
+      "mean_pressure": 551.7306898919463,
+      "peak_pressure": 1536.7963437760654,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 7.500000000000228,
+      "remaining": 53,
+      "evacuated": 7,
+      "mean_pressure": 572.8793621246468,
+      "peak_pressure": 1744.6484448703663,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 7.650000000000234,
+      "remaining": 53,
+      "evacuated": 7,
+      "mean_pressure": 591.2041900475646,
+      "peak_pressure": 1641.232435444501,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 7.80000000000024,
+      "remaining": 53,
+      "evacuated": 7,
+      "mean_pressure": 575.276786996092,
+      "peak_pressure": 1337.8548166203357,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 7.950000000000245,
+      "remaining": 53,
+      "evacuated": 7,
+      "mean_pressure": 591.2142328431397,
+      "peak_pressure": 1522.9586657675516,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 8.10000000000025,
+      "remaining": 52,
+      "evacuated": 8,
+      "mean_pressure": 594.2102506007084,
+      "peak_pressure": 1477.5048874681943,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 8.250000000000256,
+      "remaining": 52,
+      "evacuated": 8,
+      "mean_pressure": 601.62460420226,
+      "peak_pressure": 1486.3643497409353,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 8.400000000000261,
+      "remaining": 52,
+      "evacuated": 8,
+      "mean_pressure": 612.2628162935283,
+      "peak_pressure": 1734.6784833803524,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 8.550000000000267,
+      "remaining": 52,
+      "evacuated": 8,
+      "mean_pressure": 610.3520020487126,
+      "peak_pressure": 1682.788411612295,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 8.700000000000273,
+      "remaining": 52,
+      "evacuated": 8,
+      "mean_pressure": 595.5547907756619,
+      "peak_pressure": 1510.5949860440894,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 8.850000000000279,
+      "remaining": 52,
+      "evacuated": 8,
+      "mean_pressure": 590.440110303348,
+      "peak_pressure": 1476.201806000876,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 9.000000000000284,
+      "remaining": 52,
+      "evacuated": 8,
+      "mean_pressure": 589.6773818939977,
+      "peak_pressure": 1456.5764213506661,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 9.15000000000029,
+      "remaining": 51,
+      "evacuated": 9,
+      "mean_pressure": 599.2647778600004,
+      "peak_pressure": 1653.7064140116838,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 9.300000000000296,
+      "remaining": 51,
+      "evacuated": 9,
+      "mean_pressure": 591.5876743859344,
+      "peak_pressure": 1502.3742529413835,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 9.450000000000301,
+      "remaining": 51,
+      "evacuated": 9,
+      "mean_pressure": 566.0528899417587,
+      "peak_pressure": 1261.5507303232057,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 9.600000000000307,
+      "remaining": 51,
+      "evacuated": 9,
+      "mean_pressure": 546.7862698781919,
+      "peak_pressure": 1161.5422760603963,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 9.750000000000313,
+      "remaining": 51,
+      "evacuated": 9,
+      "mean_pressure": 580.7323113669695,
+      "peak_pressure": 1920.3346193730933,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 9.900000000000318,
+      "remaining": 51,
+      "evacuated": 9,
+      "mean_pressure": 569.5557761685822,
+      "peak_pressure": 1537.4935715396134,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 10.050000000000324,
+      "remaining": 51,
+      "evacuated": 9,
+      "mean_pressure": 575.3665638293334,
+      "peak_pressure": 1434.4272598523344,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 10.20000000000033,
+      "remaining": 51,
+      "evacuated": 9,
+      "mean_pressure": 573.2733370478825,
+      "peak_pressure": 1251.0197052277088,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 10.350000000000335,
+      "remaining": 50,
+      "evacuated": 10,
+      "mean_pressure": 598.2881904857642,
+      "peak_pressure": 1441.5387060375192,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 10.500000000000341,
+      "remaining": 50,
+      "evacuated": 10,
+      "mean_pressure": 581.0358638378867,
+      "peak_pressure": 1633.1564449066623,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 10.650000000000347,
+      "remaining": 50,
+      "evacuated": 10,
+      "mean_pressure": 557.7489994102053,
+      "peak_pressure": 1319.8773422236657,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 10.800000000000352,
+      "remaining": 50,
+      "evacuated": 10,
+      "mean_pressure": 530.5623511704365,
+      "peak_pressure": 1187.0629280126782,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 10.950000000000358,
+      "remaining": 49,
+      "evacuated": 11,
+      "mean_pressure": 535.1029160871678,
+      "peak_pressure": 1174.5871995258715,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 11.100000000000364,
+      "remaining": 49,
+      "evacuated": 11,
+      "mean_pressure": 533.4755276169284,
+      "peak_pressure": 1444.2835149012478,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 11.25000000000037,
+      "remaining": 49,
+      "evacuated": 11,
+      "mean_pressure": 546.318732155516,
+      "peak_pressure": 1516.3062538618783,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 11.400000000000375,
+      "remaining": 49,
+      "evacuated": 11,
+      "mean_pressure": 524.9327453293179,
+      "peak_pressure": 1316.1463787261284,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 11.55000000000038,
+      "remaining": 49,
+      "evacuated": 11,
+      "mean_pressure": 538.5003452375483,
+      "peak_pressure": 1621.9392258072874,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 11.700000000000387,
+      "remaining": 48,
+      "evacuated": 12,
+      "mean_pressure": 522.6503558367621,
+      "peak_pressure": 1338.394499488663,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 11.850000000000392,
+      "remaining": 48,
+      "evacuated": 12,
+      "mean_pressure": 540.4671319685036,
+      "peak_pressure": 1645.292642827621,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 12.000000000000398,
+      "remaining": 48,
+      "evacuated": 12,
+      "mean_pressure": 539.2329580273016,
+      "peak_pressure": 1828.2087331662312,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 12.150000000000404,
+      "remaining": 48,
+      "evacuated": 12,
+      "mean_pressure": 534.6489750483856,
+      "peak_pressure": 1538.3280130726932,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 12.30000000000041,
+      "remaining": 48,
+      "evacuated": 12,
+      "mean_pressure": 540.21979875709,
+      "peak_pressure": 1288.9687430508136,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 12.450000000000415,
+      "remaining": 48,
+      "evacuated": 12,
+      "mean_pressure": 533.4681397237653,
+      "peak_pressure": 1322.8098960339532,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 12.60000000000042,
+      "remaining": 48,
+      "evacuated": 12,
+      "mean_pressure": 525.0965511355771,
+      "peak_pressure": 1249.767159893641,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 12.750000000000426,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 550.5227292314046,
+      "peak_pressure": 1473.9059348771416,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 12.900000000000432,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 548.7414172889601,
+      "peak_pressure": 1551.0342834042224,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 13.050000000000438,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 562.5705483795962,
+      "peak_pressure": 1633.944308633436,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 13.200000000000443,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 564.4396961354937,
+      "peak_pressure": 1495.1215421973939,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 13.350000000000449,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 566.5375346334628,
+      "peak_pressure": 1548.24414986035,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 13.500000000000455,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 557.0193528659563,
+      "peak_pressure": 1584.7863734270413,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 13.65000000000046,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 544.4947549417815,
+      "peak_pressure": 1439.2170554880172,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 13.800000000000466,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 545.2318986980549,
+      "peak_pressure": 1230.1477456802234,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 13.950000000000472,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 516.7078944461813,
+      "peak_pressure": 1182.214708157989,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 14.100000000000477,
+      "remaining": 47,
+      "evacuated": 13,
+      "mean_pressure": 495.4629892512963,
+      "peak_pressure": 1117.433917145107,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 14.250000000000483,
+      "remaining": 46,
+      "evacuated": 14,
+      "mean_pressure": 508.9606736191781,
+      "peak_pressure": 1139.6617174720202,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 14.400000000000489,
+      "remaining": 46,
+      "evacuated": 14,
+      "mean_pressure": 507.27197504327205,
+      "peak_pressure": 1193.2400288991296,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 14.550000000000495,
+      "remaining": 46,
+      "evacuated": 14,
+      "mean_pressure": 510.9277752111799,
+      "peak_pressure": 1290.875001613557,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 14.7000000000005,
+      "remaining": 46,
+      "evacuated": 14,
+      "mean_pressure": 524.1519867571361,
+      "peak_pressure": 1184.8776955458884,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 14.850000000000506,
+      "remaining": 46,
+      "evacuated": 14,
+      "mean_pressure": 513.7449735388573,
+      "peak_pressure": 1296.5009012594053,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 15.000000000000512,
+      "remaining": 45,
+      "evacuated": 15,
+      "mean_pressure": 516.9196744339529,
+      "peak_pressure": 1199.472294912731,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 15.150000000000517,
+      "remaining": 45,
+      "evacuated": 15,
+      "mean_pressure": 500.8758358927852,
+      "peak_pressure": 1205.2342788474486,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 15.300000000000523,
+      "remaining": 45,
+      "evacuated": 15,
+      "mean_pressure": 493.75415940278947,
+      "peak_pressure": 1211.9009317740545,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 15.450000000000529,
+      "remaining": 45,
+      "evacuated": 15,
+      "mean_pressure": 507.56739956461956,
+      "peak_pressure": 1160.9048199485865,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 15.600000000000534,
+      "remaining": 45,
+      "evacuated": 15,
+      "mean_pressure": 500.9608387778401,
+      "peak_pressure": 1206.6956998584587,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 15.75000000000054,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 506.46334147961085,
+      "peak_pressure": 1231.9524475071973,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 15.900000000000546,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 525.7224734560145,
+      "peak_pressure": 1285.8328431803538,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 16.05000000000055,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 534.7510892506771,
+      "peak_pressure": 1356.205132042008,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 16.200000000000557,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 538.0587495583442,
+      "peak_pressure": 1440.7095128907313,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 16.350000000000563,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 541.5863930235055,
+      "peak_pressure": 1295.9970720893998,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 16.50000000000057,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 527.1075983352184,
+      "peak_pressure": 1184.7989163911443,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 16.650000000000574,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 519.4273600933877,
+      "peak_pressure": 1260.9998018962572,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 16.80000000000058,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 506.7348191103067,
+      "peak_pressure": 1293.8777416305345,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 16.950000000000585,
+      "remaining": 44,
+      "evacuated": 16,
+      "mean_pressure": 485.5784427302824,
+      "peak_pressure": 1400.3696220630877,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 17.10000000000059,
+      "remaining": 43,
+      "evacuated": 17,
+      "mean_pressure": 494.421910914594,
+      "peak_pressure": 1405.3980452857786,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 17.250000000000597,
+      "remaining": 43,
+      "evacuated": 17,
+      "mean_pressure": 497.5286957803553,
+      "peak_pressure": 1465.4001877717058,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 17.400000000000603,
+      "remaining": 43,
+      "evacuated": 17,
+      "mean_pressure": 511.37758338251524,
+      "peak_pressure": 1519.4711698572435,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 17.55000000000061,
+      "remaining": 43,
+      "evacuated": 17,
+      "mean_pressure": 516.6029732667166,
+      "peak_pressure": 1492.789948645058,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 17.700000000000614,
+      "remaining": 43,
+      "evacuated": 17,
+      "mean_pressure": 525.3908646649846,
+      "peak_pressure": 1410.6132095344658,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 17.85000000000062,
+      "remaining": 43,
+      "evacuated": 17,
+      "mean_pressure": 534.6924058924196,
+      "peak_pressure": 1480.8177386008665,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 18.000000000000625,
+      "remaining": 43,
+      "evacuated": 17,
+      "mean_pressure": 528.295225405919,
+      "peak_pressure": 1455.821854874163,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 18.15000000000063,
+      "remaining": 43,
+      "evacuated": 17,
+      "mean_pressure": 522.4974750914521,
+      "peak_pressure": 1540.5901550058416,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 18.300000000000637,
+      "remaining": 42,
+      "evacuated": 18,
+      "mean_pressure": 505.3840520128893,
+      "peak_pressure": 1294.5586262461647,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 18.450000000000642,
+      "remaining": 42,
+      "evacuated": 18,
+      "mean_pressure": 477.9486574791804,
+      "peak_pressure": 1161.691470688386,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 18.600000000000648,
+      "remaining": 42,
+      "evacuated": 18,
+      "mean_pressure": 446.7829810337748,
+      "peak_pressure": 992.4691144228577,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 18.750000000000654,
+      "remaining": 42,
+      "evacuated": 18,
+      "mean_pressure": 416.2509079030209,
+      "peak_pressure": 1082.8234519616612,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 18.90000000000066,
+      "remaining": 41,
+      "evacuated": 19,
+      "mean_pressure": 441.58105847155446,
+      "peak_pressure": 1287.6278910479018,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 19.050000000000665,
+      "remaining": 41,
+      "evacuated": 19,
+      "mean_pressure": 426.68331100912474,
+      "peak_pressure": 929.2715614178951,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 19.20000000000067,
+      "remaining": 41,
+      "evacuated": 19,
+      "mean_pressure": 441.15096472655375,
+      "peak_pressure": 1013.6896038184558,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 19.350000000000676,
+      "remaining": 41,
+      "evacuated": 19,
+      "mean_pressure": 463.50221187433004,
+      "peak_pressure": 1110.3055587171557,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 19.500000000000682,
+      "remaining": 41,
+      "evacuated": 19,
+      "mean_pressure": 470.37382238813217,
+      "peak_pressure": 1032.041126585721,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 19.650000000000688,
+      "remaining": 41,
+      "evacuated": 19,
+      "mean_pressure": 469.80041779886363,
+      "peak_pressure": 1152.926548086326,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 19.800000000000693,
+      "remaining": 40,
+      "evacuated": 20,
+      "mean_pressure": 480.64532526525784,
+      "peak_pressure": 1126.890384870745,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 19.9500000000007,
+      "remaining": 40,
+      "evacuated": 20,
+      "mean_pressure": 495.58427319358833,
+      "peak_pressure": 1381.1524716966628,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 20.100000000000705,
+      "remaining": 40,
+      "evacuated": 20,
+      "mean_pressure": 478.77358432571555,
+      "peak_pressure": 1295.924731914326,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 20.25000000000071,
+      "remaining": 40,
+      "evacuated": 20,
+      "mean_pressure": 475.7795463731767,
+      "peak_pressure": 1221.281729412176,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 20.400000000000716,
+      "remaining": 40,
+      "evacuated": 20,
+      "mean_pressure": 468.67080566681017,
+      "peak_pressure": 1151.8836497144353,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 20.550000000000722,
+      "remaining": 40,
+      "evacuated": 20,
+      "mean_pressure": 459.6636216546467,
+      "peak_pressure": 1107.5149740485824,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 20.700000000000728,
+      "remaining": 40,
+      "evacuated": 20,
+      "mean_pressure": 436.49402944429903,
+      "peak_pressure": 906.4173247302011,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 20.850000000000733,
+      "remaining": 39,
+      "evacuated": 21,
+      "mean_pressure": 452.45130588047004,
+      "peak_pressure": 1143.3573425751738,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 21.00000000000074,
+      "remaining": 39,
+      "evacuated": 21,
+      "mean_pressure": 455.09488464323596,
+      "peak_pressure": 1129.682041294454,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 21.150000000000745,
+      "remaining": 39,
+      "evacuated": 21,
+      "mean_pressure": 453.56284109877157,
+      "peak_pressure": 961.0624659536647,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 21.30000000000075,
+      "remaining": 39,
+      "evacuated": 21,
+      "mean_pressure": 463.0638685381615,
+      "peak_pressure": 1008.7599031408562,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 21.450000000000756,
+      "remaining": 39,
+      "evacuated": 21,
+      "mean_pressure": 477.596673121811,
+      "peak_pressure": 1014.9840082463473,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 21.60000000000076,
+      "remaining": 39,
+      "evacuated": 21,
+      "mean_pressure": 469.0978406436488,
+      "peak_pressure": 1096.6872104113797,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 21.750000000000767,
+      "remaining": 39,
+      "evacuated": 21,
+      "mean_pressure": 439.79107865551214,
+      "peak_pressure": 1011.481788380874,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 21.900000000000773,
+      "remaining": 39,
+      "evacuated": 21,
+      "mean_pressure": 423.19006680005083,
+      "peak_pressure": 848.0843007867046,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 22.05000000000078,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 437.74332000307686,
+      "peak_pressure": 1080.172059325593,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 22.200000000000784,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 424.9749165169832,
+      "peak_pressure": 1060.8812600703327,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 22.35000000000079,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 447.86046640072175,
+      "peak_pressure": 1088.9506517064606,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 22.500000000000796,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 464.3184769577657,
+      "peak_pressure": 1129.6342856957704,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 22.6500000000008,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 458.93462467883853,
+      "peak_pressure": 1077.5544569016872,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 22.800000000000807,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 470.709647860733,
+      "peak_pressure": 1076.150190110001,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 22.950000000000813,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 466.09594556923014,
+      "peak_pressure": 1015.6710313790302,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 23.10000000000082,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 461.2198539821464,
+      "peak_pressure": 990.4991767914545,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 23.250000000000824,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 452.6818152138202,
+      "peak_pressure": 967.1710705233943,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 23.40000000000083,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 433.02470444710735,
+      "peak_pressure": 965.0744839662025,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 23.550000000000836,
+      "remaining": 38,
+      "evacuated": 22,
+      "mean_pressure": 423.5157743096157,
+      "peak_pressure": 958.1677857792806,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 23.70000000000084,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 428.88519823185766,
+      "peak_pressure": 918.7293413671076,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 23.850000000000847,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 434.4135293141875,
+      "peak_pressure": 1058.1018240364535,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 24.000000000000853,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 442.77272891480396,
+      "peak_pressure": 1051.904733438384,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 24.15000000000086,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 451.0036552189037,
+      "peak_pressure": 1028.003685347998,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 24.300000000000864,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 466.636085496657,
+      "peak_pressure": 1089.3767948258035,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 24.45000000000087,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 464.6590746925475,
+      "peak_pressure": 1085.6278863929383,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 24.600000000000875,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 463.9254460845093,
+      "peak_pressure": 1098.9182113823135,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 24.75000000000088,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 460.282368411628,
+      "peak_pressure": 1072.7141582181657,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 24.900000000000887,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 461.3683659598696,
+      "peak_pressure": 1122.5367512630828,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 25.050000000000892,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 461.7792159791683,
+      "peak_pressure": 1149.1660288036167,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 25.200000000000898,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 461.36402591306467,
+      "peak_pressure": 1173.1828009860396,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 25.350000000000904,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 461.5589939124422,
+      "peak_pressure": 1172.7523500203895,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 25.50000000000091,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 459.3711002833896,
+      "peak_pressure": 1165.7178513810284,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 25.650000000000915,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 458.2906688088581,
+      "peak_pressure": 1155.6382397503305,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 25.80000000000092,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 450.4264633191404,
+      "peak_pressure": 1109.2337049999421,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 25.950000000000927,
+      "remaining": 37,
+      "evacuated": 23,
+      "mean_pressure": 434.59388155586265,
+      "peak_pressure": 1077.414510592828,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 26.100000000000932,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 430.69801289571217,
+      "peak_pressure": 1035.826353691324,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 26.250000000000938,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 425.86006486792434,
+      "peak_pressure": 1023.1120852748,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 26.400000000000944,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 421.68706363029025,
+      "peak_pressure": 1003.6262667378398,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 26.55000000000095,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 436.1651882097957,
+      "peak_pressure": 1106.9909839626855,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 26.700000000000955,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 460.73447437687435,
+      "peak_pressure": 1192.4576450429881,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 26.85000000000096,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 459.19249475445343,
+      "peak_pressure": 1184.1750223575714,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 27.000000000000966,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 482.6814684400425,
+      "peak_pressure": 1192.0851634056055,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 27.150000000000972,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 471.7163142091379,
+      "peak_pressure": 1090.5764651156874,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 27.300000000000978,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 485.4147661921809,
+      "peak_pressure": 1250.1820127741755,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 27.450000000000983,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 474.78102740391165,
+      "peak_pressure": 1115.1626628234483,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 27.60000000000099,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 463.1930081220279,
+      "peak_pressure": 1053.3917016959267,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 27.750000000000995,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 452.4501008361301,
+      "peak_pressure": 1074.2611205673454,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 27.900000000001,
+      "remaining": 36,
+      "evacuated": 24,
+      "mean_pressure": 433.3155548453363,
+      "peak_pressure": 1035.5001443363587,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 28.050000000001006,
+      "remaining": 35,
+      "evacuated": 25,
+      "mean_pressure": 437.6629065876251,
+      "peak_pressure": 1119.1034946404593,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 28.200000000001012,
+      "remaining": 35,
+      "evacuated": 25,
+      "mean_pressure": 440.4054881407335,
+      "peak_pressure": 1216.8071120809502,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 28.350000000001017,
+      "remaining": 35,
+      "evacuated": 25,
+      "mean_pressure": 447.9178570444312,
+      "peak_pressure": 1184.707453889678,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 28.500000000001023,
+      "remaining": 35,
+      "evacuated": 25,
+      "mean_pressure": 453.33003575074537,
+      "peak_pressure": 1038.9907767401814,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 28.65000000000103,
+      "remaining": 35,
+      "evacuated": 25,
+      "mean_pressure": 443.29779458683106,
+      "peak_pressure": 1051.627282286617,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 28.800000000001035,
+      "remaining": 35,
+      "evacuated": 25,
+      "mean_pressure": 431.4128946444699,
+      "peak_pressure": 996.005713743829,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 28.95000000000104,
+      "remaining": 35,
+      "evacuated": 25,
+      "mean_pressure": 422.3801797287552,
+      "peak_pressure": 965.2962377870095,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 29.100000000001046,
+      "remaining": 35,
+      "evacuated": 25,
+      "mean_pressure": 405.93887727578453,
+      "peak_pressure": 873.6665943717984,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 29.25000000000105,
+      "remaining": 34,
+      "evacuated": 26,
+      "mean_pressure": 420.5307757085541,
+      "peak_pressure": 898.3906170529748,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 29.400000000001057,
+      "remaining": 34,
+      "evacuated": 26,
+      "mean_pressure": 412.6658927193398,
+      "peak_pressure": 901.6604720873183,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 29.550000000001063,
+      "remaining": 34,
+      "evacuated": 26,
+      "mean_pressure": 414.6923121937449,
+      "peak_pressure": 1009.9927443750954,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 29.70000000000107,
+      "remaining": 34,
+      "evacuated": 26,
+      "mean_pressure": 412.5612669566922,
+      "peak_pressure": 975.5596819034995,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 29.850000000001074,
+      "remaining": 34,
+      "evacuated": 26,
+      "mean_pressure": 406.16364924173206,
+      "peak_pressure": 922.7835219804421,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 30.00000000000108,
+      "remaining": 34,
+      "evacuated": 26,
+      "mean_pressure": 418.10832046988344,
+      "peak_pressure": 863.0567760553922,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 30.150000000001086,
+      "remaining": 33,
+      "evacuated": 27,
+      "mean_pressure": 428.0249955466023,
+      "peak_pressure": 877.72832340353,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 30.30000000000109,
+      "remaining": 33,
+      "evacuated": 27,
+      "mean_pressure": 415.2024372515712,
+      "peak_pressure": 987.456438658632,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 30.450000000001097,
+      "remaining": 33,
+      "evacuated": 27,
+      "mean_pressure": 401.96068686657566,
+      "peak_pressure": 1062.7710536436832,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 30.600000000001103,
+      "remaining": 33,
+      "evacuated": 27,
+      "mean_pressure": 404.1388503450533,
+      "peak_pressure": 1308.4812061990967,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 30.75000000000111,
+      "remaining": 33,
+      "evacuated": 27,
+      "mean_pressure": 380.13526492424114,
+      "peak_pressure": 981.8789687398589,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 30.900000000001114,
+      "remaining": 33,
+      "evacuated": 27,
+      "mean_pressure": 360.1358653178874,
+      "peak_pressure": 870.7563911126715,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 31.05000000000112,
+      "remaining": 32,
+      "evacuated": 28,
+      "mean_pressure": 354.7086970036167,
+      "peak_pressure": 842.8744062934767,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 31.200000000001125,
+      "remaining": 32,
+      "evacuated": 28,
+      "mean_pressure": 352.90485514890077,
+      "peak_pressure": 818.7849437351364,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 31.35000000000113,
+      "remaining": 32,
+      "evacuated": 28,
+      "mean_pressure": 350.7903967211782,
+      "peak_pressure": 792.5781789785226,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 31.500000000001137,
+      "remaining": 32,
+      "evacuated": 28,
+      "mean_pressure": 347.0195657813447,
+      "peak_pressure": 742.5799441172475,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 31.650000000001143,
+      "remaining": 32,
+      "evacuated": 28,
+      "mean_pressure": 381.9160599065841,
+      "peak_pressure": 838.3045351302874,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 31.80000000000115,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 411.6783851822405,
+      "peak_pressure": 1008.7525998891441,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 31.950000000001154,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 405.0975651029891,
+      "peak_pressure": 836.0479004600354,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 32.10000000000116,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 441.52562851480553,
+      "peak_pressure": 954.3451889262143,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 32.250000000001165,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 444.186155004611,
+      "peak_pressure": 927.9338406940643,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 32.40000000000117,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 445.22707378138415,
+      "peak_pressure": 934.6001254773174,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 32.55000000000118,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 440.4270536888368,
+      "peak_pressure": 939.5076712989443,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 32.70000000000118,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 418.98153840085394,
+      "peak_pressure": 867.0727202591595,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 32.85000000000119,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 411.8666328185956,
+      "peak_pressure": 897.8972693533574,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 33.000000000001194,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 408.94513182774665,
+      "peak_pressure": 996.1032315314036,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 33.1500000000012,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 404.24478790431624,
+      "peak_pressure": 958.7657063364786,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 33.300000000001205,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 410.04202849210884,
+      "peak_pressure": 1095.666616737842,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 33.45000000000121,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 408.76437222938824,
+      "peak_pressure": 1023.7562168295549,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 33.60000000000122,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 411.2816400418943,
+      "peak_pressure": 998.0235740884494,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 33.75000000000122,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 416.97435247767544,
+      "peak_pressure": 1108.9347472737463,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 33.90000000000123,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 418.80325527200444,
+      "peak_pressure": 1121.286548181442,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 34.05000000000123,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 415.3013543327621,
+      "peak_pressure": 1107.9875925015701,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 34.20000000000124,
+      "remaining": 31,
+      "evacuated": 29,
+      "mean_pressure": 409.5580763688286,
+      "peak_pressure": 1163.9242307947336,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 34.350000000001245,
+      "remaining": 30,
+      "evacuated": 30,
+      "mean_pressure": 413.5822278311417,
+      "peak_pressure": 1209.795366472602,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 34.50000000000125,
+      "remaining": 30,
+      "evacuated": 30,
+      "mean_pressure": 411.8574816661847,
+      "peak_pressure": 1318.0885193484448,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 34.650000000001256,
+      "remaining": 30,
+      "evacuated": 30,
+      "mean_pressure": 406.27260735115357,
+      "peak_pressure": 1352.8991229290584,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 34.80000000000126,
+      "remaining": 30,
+      "evacuated": 30,
+      "mean_pressure": 385.3399153773691,
+      "peak_pressure": 1086.630769127559,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 34.95000000000127,
+      "remaining": 30,
+      "evacuated": 30,
+      "mean_pressure": 361.6032688496054,
+      "peak_pressure": 967.3325247779277,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 35.10000000000127,
+      "remaining": 30,
+      "evacuated": 30,
+      "mean_pressure": 336.6256932491777,
+      "peak_pressure": 857.4032792059647,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 35.25000000000128,
+      "remaining": 30,
+      "evacuated": 30,
+      "mean_pressure": 324.70899414581237,
+      "peak_pressure": 766.6872318530292,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 35.400000000001285,
+      "remaining": 29,
+      "evacuated": 31,
+      "mean_pressure": 315.6481754738562,
+      "peak_pressure": 760.2827417691167,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 35.55000000000129,
+      "remaining": 29,
+      "evacuated": 31,
+      "mean_pressure": 309.4950739429286,
+      "peak_pressure": 744.5684884872474,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 35.700000000001296,
+      "remaining": 29,
+      "evacuated": 31,
+      "mean_pressure": 301.9559021603568,
+      "peak_pressure": 680.8163212327973,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 35.8500000000013,
+      "remaining": 29,
+      "evacuated": 31,
+      "mean_pressure": 331.4744503332975,
+      "peak_pressure": 978.6803150911346,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 36.00000000000131,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 352.3557888773858,
+      "peak_pressure": 955.0408520196861,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 36.15000000000131,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 369.38758995511614,
+      "peak_pressure": 981.1204469847631,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 36.30000000000132,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 397.14708089995366,
+      "peak_pressure": 1076.6080531289767,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 36.450000000001324,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 380.3571557799066,
+      "peak_pressure": 1071.5010627955385,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 36.60000000000133,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 387.36238223090356,
+      "peak_pressure": 1052.3993336779288,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 36.750000000001336,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 385.79264820630254,
+      "peak_pressure": 898.0272400932766,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 36.90000000000134,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 369.93323202628113,
+      "peak_pressure": 782.116543828296,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 37.05000000000135,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 345.3356400844001,
+      "peak_pressure": 812.8368291608524,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 37.20000000000135,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 312.9548019780406,
+      "peak_pressure": 684.45341064718,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 37.35000000000136,
+      "remaining": 28,
+      "evacuated": 32,
+      "mean_pressure": 296.4258841264191,
+      "peak_pressure": 594.6720643947626,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 37.500000000001364,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 334.2996052962393,
+      "peak_pressure": 974.075778854933,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 37.65000000000137,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 325.2574277820138,
+      "peak_pressure": 778.0214390487658,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 37.800000000001376,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 348.68215517296744,
+      "peak_pressure": 764.7015553024626,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 37.95000000000138,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 368.7248931186771,
+      "peak_pressure": 864.9439792654898,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 38.10000000000139,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 372.0667536027374,
+      "peak_pressure": 809.0905455578238,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 38.25000000000139,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 370.9687628313212,
+      "peak_pressure": 871.8655518613916,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 38.4000000000014,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 362.71100830794467,
+      "peak_pressure": 919.2136637244607,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 38.550000000001404,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 344.07421996822313,
+      "peak_pressure": 884.2226558738031,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 38.70000000000141,
+      "remaining": 27,
+      "evacuated": 33,
+      "mean_pressure": 321.36460490970245,
+      "peak_pressure": 820.6388257178098,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 38.850000000001415,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 324.43265087425885,
+      "peak_pressure": 769.1365929068328,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 39.00000000000142,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 333.3199950214733,
+      "peak_pressure": 799.232047662308,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 39.15000000000143,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 343.14129751637836,
+      "peak_pressure": 891.5904428994631,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 39.30000000000143,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 358.3028462501679,
+      "peak_pressure": 983.7667134934912,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 39.45000000000144,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 358.73788459355916,
+      "peak_pressure": 925.9529751564772,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 39.600000000001444,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 358.7284299340744,
+      "peak_pressure": 844.008829543876,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 39.75000000000145,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 363.41303555964595,
+      "peak_pressure": 834.8168934540826,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 39.900000000001455,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 359.94620124320807,
+      "peak_pressure": 822.1851292723793,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 40.05000000000146,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 360.0561998712907,
+      "peak_pressure": 882.3278375352825,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 40.20000000000147,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 360.44308453075,
+      "peak_pressure": 914.1957817737508,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 40.35000000000147,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 362.02948636757,
+      "peak_pressure": 907.2125761929636,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 40.50000000000148,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 367.7700307799526,
+      "peak_pressure": 916.810410962973,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 40.650000000001484,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 366.4803940220432,
+      "peak_pressure": 890.1328034559068,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 40.80000000000149,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 358.7091816533639,
+      "peak_pressure": 813.9362546246457,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 40.950000000001495,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 341.26030449100756,
+      "peak_pressure": 745.4831313885326,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 41.1000000000015,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 311.5890681164641,
+      "peak_pressure": 720.7067088964913,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 41.250000000001506,
+      "remaining": 26,
+      "evacuated": 34,
+      "mean_pressure": 275.5411666476446,
+      "peak_pressure": 676.9558354137155,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 41.40000000000151,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 276.8540859411836,
+      "peak_pressure": 655.1437772773056,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 41.55000000000152,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 281.45354953471127,
+      "peak_pressure": 743.5342209946172,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 41.70000000000152,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 294.6623385540235,
+      "peak_pressure": 734.9169515946863,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 41.85000000000153,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 329.47719699871277,
+      "peak_pressure": 892.8734788355996,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 42.000000000001535,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 336.701020114313,
+      "peak_pressure": 809.8209234983148,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 42.15000000000154,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 334.8904003061454,
+      "peak_pressure": 853.4117417463297,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 42.300000000001546,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 350.3384401477215,
+      "peak_pressure": 958.2810302549386,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 42.45000000000155,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 342.56614032802975,
+      "peak_pressure": 827.8454114262872,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 42.60000000000156,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 346.2711822026322,
+      "peak_pressure": 765.7090945567188,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 42.75000000000156,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 351.9775219362653,
+      "peak_pressure": 782.6098877321305,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 42.90000000000157,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 350.1082045819927,
+      "peak_pressure": 754.4320718422257,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 43.050000000001575,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 349.82941955373326,
+      "peak_pressure": 765.4892760117248,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 43.20000000000158,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 348.0142896204589,
+      "peak_pressure": 769.3074043698455,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 43.350000000001586,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 340.23335257574104,
+      "peak_pressure": 674.1702407731323,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 43.50000000000159,
+      "remaining": 25,
+      "evacuated": 35,
+      "mean_pressure": 330.8391412526736,
+      "peak_pressure": 671.6328078321931,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 43.6500000000016,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 338.4865549169426,
+      "peak_pressure": 749.3298880275786,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 43.8000000000016,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 343.3758589725374,
+      "peak_pressure": 838.6095806533575,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 43.95000000000161,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 349.16996710527224,
+      "peak_pressure": 923.8930851686044,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 44.100000000001614,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 352.3605946665022,
+      "peak_pressure": 945.7562665168084,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 44.25000000000162,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 350.05369257201755,
+      "peak_pressure": 960.0062405928192,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 44.400000000001626,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 336.9260214805358,
+      "peak_pressure": 943.0240266043377,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 44.55000000000163,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 326.670437854348,
+      "peak_pressure": 947.8113222843884,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 44.70000000000164,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 333.8704885510772,
+      "peak_pressure": 1100.1552187344375,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 44.85000000000164,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 333.05146033401195,
+      "peak_pressure": 1086.7781570062361,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 45.00000000000165,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 327.4523324497195,
+      "peak_pressure": 953.3712617777222,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 45.150000000001654,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 325.859563846132,
+      "peak_pressure": 763.6635812050085,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 45.30000000000166,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 316.47069666155363,
+      "peak_pressure": 771.5474970748298,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 45.450000000001666,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 300.635851902609,
+      "peak_pressure": 696.746995202572,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 45.60000000000167,
+      "remaining": 24,
+      "evacuated": 36,
+      "mean_pressure": 303.2532171756174,
+      "peak_pressure": 693.4345127760874,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 45.75000000000168,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 306.7038084547245,
+      "peak_pressure": 651.377299163162,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 45.90000000000168,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 292.941067896803,
+      "peak_pressure": 616.8483435634502,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 46.05000000000169,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 311.0855144979276,
+      "peak_pressure": 709.5773075605604,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 46.200000000001694,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 318.63373440489084,
+      "peak_pressure": 719.7981529789396,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 46.3500000000017,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 315.4944872195004,
+      "peak_pressure": 788.3092346776613,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 46.500000000001705,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 306.85237421022083,
+      "peak_pressure": 793.2340941743857,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 46.65000000000171,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 327.4111769482066,
+      "peak_pressure": 758.2543756959974,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 46.80000000000172,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 326.58241966845117,
+      "peak_pressure": 878.4457727112012,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 46.95000000000172,
+      "remaining": 23,
+      "evacuated": 37,
+      "mean_pressure": 311.9788451304117,
+      "peak_pressure": 833.4693647287661,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 47.10000000000173,
+      "remaining": 22,
+      "evacuated": 38,
+      "mean_pressure": 306.7599332658205,
+      "peak_pressure": 776.445788349465,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 47.250000000001734,
+      "remaining": 22,
+      "evacuated": 38,
+      "mean_pressure": 301.36236189366724,
+      "peak_pressure": 782.8443866002162,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 47.40000000000174,
+      "remaining": 22,
+      "evacuated": 38,
+      "mean_pressure": 313.12315112713736,
+      "peak_pressure": 744.6501614011826,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 47.550000000001745,
+      "remaining": 22,
+      "evacuated": 38,
+      "mean_pressure": 305.03792910473226,
+      "peak_pressure": 749.8073122471172,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 47.70000000000175,
+      "remaining": 22,
+      "evacuated": 38,
+      "mean_pressure": 296.5121658351173,
+      "peak_pressure": 683.9700057155063,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 47.85000000000176,
+      "remaining": 22,
+      "evacuated": 38,
+      "mean_pressure": 297.6918528755578,
+      "peak_pressure": 656.8849659598263,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 48.00000000000176,
+      "remaining": 22,
+      "evacuated": 38,
+      "mean_pressure": 278.45397267605586,
+      "peak_pressure": 568.7238398572908,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 48.15000000000177,
+      "remaining": 21,
+      "evacuated": 39,
+      "mean_pressure": 257.7455136913606,
+      "peak_pressure": 533.9573613329541,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 48.30000000000177,
+      "remaining": 21,
+      "evacuated": 39,
+      "mean_pressure": 260.20676682694733,
+      "peak_pressure": 477.6588276522728,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 48.45000000000178,
+      "remaining": 21,
+      "evacuated": 39,
+      "mean_pressure": 261.4742040048005,
+      "peak_pressure": 527.7916711892465,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 48.600000000001785,
+      "remaining": 21,
+      "evacuated": 39,
+      "mean_pressure": 282.59922257745035,
+      "peak_pressure": 760.4660708347776,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 48.75000000000179,
+      "remaining": 21,
+      "evacuated": 39,
+      "mean_pressure": 298.6731881298516,
+      "peak_pressure": 844.2690148049031,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 48.900000000001796,
+      "remaining": 21,
+      "evacuated": 39,
+      "mean_pressure": 295.723915147523,
+      "peak_pressure": 889.3798369844166,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 49.0500000000018,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 311.6848550228954,
+      "peak_pressure": 778.8258397954353,
+      "flow_rate": 1.5,
+      "arch_active": false
+    },
+    {
+      "time": 49.20000000000181,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 306.8952150520387,
+      "peak_pressure": 652.7779823205304,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 49.35000000000181,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 309.3034928052362,
+      "peak_pressure": 625.7485156513736,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 49.50000000000182,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 315.73289087820774,
+      "peak_pressure": 673.2667891367065,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 49.650000000001825,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 314.3074068848677,
+      "peak_pressure": 631.4776515299666,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 49.80000000000183,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 299.6155005171471,
+      "peak_pressure": 586.2827974262758,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 49.950000000001836,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 296.8424575163423,
+      "peak_pressure": 662.6389066434522,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 50.10000000000184,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 293.3469583242813,
+      "peak_pressure": 672.4226468643601,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 50.25000000000185,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 287.32594155191794,
+      "peak_pressure": 607.9839906271675,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 50.40000000000185,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 290.1338043399851,
+      "peak_pressure": 690.3371413310925,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 50.55000000000186,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 294.7168848201112,
+      "peak_pressure": 812.1160153427571,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 50.700000000001864,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 292.6114791190431,
+      "peak_pressure": 760.0684338929418,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 50.85000000000187,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 300.04882850355824,
+      "peak_pressure": 718.0024018257975,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 51.000000000001876,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 309.50421382204036,
+      "peak_pressure": 745.7911067821884,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 51.15000000000188,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 293.8739147593816,
+      "peak_pressure": 657.0882177810228,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 51.30000000000189,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 261.6494334293003,
+      "peak_pressure": 580.6539085069012,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 51.45000000000189,
+      "remaining": 20,
+      "evacuated": 40,
+      "mean_pressure": 239.98684233553954,
+      "peak_pressure": 506.4428326000095,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 51.6000000000019,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 275.89061794206845,
+      "peak_pressure": 757.6009550348633,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 51.750000000001904,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 278.9590671431397,
+      "peak_pressure": 641.549099012545,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 51.90000000000191,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 288.7761920848766,
+      "peak_pressure": 565.3987828566146,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 52.050000000001916,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 301.3556006232035,
+      "peak_pressure": 590.4634795617397,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 52.20000000000192,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 302.2911019586771,
+      "peak_pressure": 600.1692997614447,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 52.35000000000193,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 294.73946204289683,
+      "peak_pressure": 616.7789491839458,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 52.50000000000193,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 281.48951556821083,
+      "peak_pressure": 740.848920290806,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 52.65000000000194,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 256.2452589718173,
+      "peak_pressure": 638.8656110448658,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 52.800000000001944,
+      "remaining": 19,
+      "evacuated": 41,
+      "mean_pressure": 248.5640814274819,
+      "peak_pressure": 516.0647326843584,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 52.95000000000195,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 251.376910941598,
+      "peak_pressure": 612.9222440359583,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 53.100000000001955,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 248.84041498919558,
+      "peak_pressure": 608.1661602185491,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 53.25000000000196,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 273.69271099260254,
+      "peak_pressure": 735.5220200323423,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 53.40000000000197,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 292.40905081151516,
+      "peak_pressure": 779.3805942565368,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 53.55000000000197,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 285.96204829324296,
+      "peak_pressure": 620.9661296592053,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 53.70000000000198,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 287.9181173926164,
+      "peak_pressure": 624.137978749102,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 53.850000000001984,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 293.61279512837973,
+      "peak_pressure": 727.2368454484733,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 54.00000000000199,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 284.96976190746614,
+      "peak_pressure": 685.8348244505489,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 54.150000000001995,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 284.551753012081,
+      "peak_pressure": 661.1444456605575,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 54.300000000002,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 289.27753669546644,
+      "peak_pressure": 647.4373230919851,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 54.45000000000201,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 285.57295171091806,
+      "peak_pressure": 689.8630182796971,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 54.60000000000201,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 277.5498204032708,
+      "peak_pressure": 732.7359883988548,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 54.75000000000202,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 275.58997077055415,
+      "peak_pressure": 721.9701945857255,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 54.900000000002024,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 279.4098612104865,
+      "peak_pressure": 697.1152101571191,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 55.05000000000203,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 271.35316421714106,
+      "peak_pressure": 637.2596563840004,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 55.200000000002035,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 261.40309218628033,
+      "peak_pressure": 585.0295946077146,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 55.35000000000204,
+      "remaining": 18,
+      "evacuated": 42,
+      "mean_pressure": 248.74148828905703,
+      "peak_pressure": 574.623662022663,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 55.500000000002046,
+      "remaining": 17,
+      "evacuated": 43,
+      "mean_pressure": 244.2819863954949,
+      "peak_pressure": 554.7249770536758,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 55.65000000000205,
+      "remaining": 17,
+      "evacuated": 43,
+      "mean_pressure": 239.16564061720248,
+      "peak_pressure": 526.5498469302021,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 55.80000000000206,
+      "remaining": 17,
+      "evacuated": 43,
+      "mean_pressure": 250.44370885195974,
+      "peak_pressure": 697.0008878400914,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 55.95000000000206,
+      "remaining": 17,
+      "evacuated": 43,
+      "mean_pressure": 223.79536079033056,
+      "peak_pressure": 591.3578758248958,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 56.10000000000207,
+      "remaining": 17,
+      "evacuated": 43,
+      "mean_pressure": 215.15098355712652,
+      "peak_pressure": 627.0694125217432,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 56.250000000002075,
+      "remaining": 17,
+      "evacuated": 43,
+      "mean_pressure": 221.98914168723635,
+      "peak_pressure": 646.6174191300246,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 56.40000000000208,
+      "remaining": 17,
+      "evacuated": 43,
+      "mean_pressure": 220.37433646635134,
+      "peak_pressure": 597.5984252164473,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 56.550000000002086,
+      "remaining": 17,
+      "evacuated": 43,
+      "mean_pressure": 214.30653298411153,
+      "peak_pressure": 541.0119555195433,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 56.70000000000209,
+      "remaining": 16,
+      "evacuated": 44,
+      "mean_pressure": 242.09726309470466,
+      "peak_pressure": 635.4150207308554,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 56.8500000000021,
+      "remaining": 16,
+      "evacuated": 44,
+      "mean_pressure": 244.65749471027576,
+      "peak_pressure": 581.0305927997784,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 57.0000000000021,
+      "remaining": 16,
+      "evacuated": 44,
+      "mean_pressure": 236.77937659778115,
+      "peak_pressure": 425.6800298688553,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 57.15000000000211,
+      "remaining": 16,
+      "evacuated": 44,
+      "mean_pressure": 228.7979652783593,
+      "peak_pressure": 412.7718997892061,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 57.300000000002115,
+      "remaining": 16,
+      "evacuated": 44,
+      "mean_pressure": 219.76284589587385,
+      "peak_pressure": 419.72535859266816,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 57.45000000000212,
+      "remaining": 16,
+      "evacuated": 44,
+      "mean_pressure": 199.62379132260253,
+      "peak_pressure": 417.4031894781435,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 57.600000000002126,
+      "remaining": 16,
+      "evacuated": 44,
+      "mean_pressure": 176.55392140438533,
+      "peak_pressure": 378.65803637864826,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 57.75000000000213,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 221.73864178615568,
+      "peak_pressure": 658.2119514109213,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 57.90000000000214,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 215.00330168619342,
+      "peak_pressure": 539.2172203781561,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 58.05000000000214,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 235.9037842716006,
+      "peak_pressure": 484.3374379803801,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 58.20000000000215,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 265.5084114772065,
+      "peak_pressure": 571.1471558956241,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 58.350000000002154,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 273.5877906437846,
+      "peak_pressure": 577.8507180438039,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 58.50000000000216,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 260.8364307009753,
+      "peak_pressure": 471.6043182297514,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 58.650000000002166,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 256.45580821568694,
+      "peak_pressure": 474.5313484400762,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 58.80000000000217,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 256.7971800569616,
+      "peak_pressure": 475.1753476137553,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 58.95000000000218,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 240.50966195640584,
+      "peak_pressure": 470.72355421515783,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 59.10000000000218,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 230.81855409173608,
+      "peak_pressure": 460.61398939774847,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 59.25000000000219,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 226.6882351315135,
+      "peak_pressure": 476.6306241509173,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 59.400000000002194,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 218.87340232569105,
+      "peak_pressure": 451.45520431844574,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 59.5500000000022,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 220.9773382731638,
+      "peak_pressure": 416.7282831313216,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 59.700000000002206,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 229.45546533160217,
+      "peak_pressure": 397.54806700228386,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 59.85000000000221,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 233.77515766178016,
+      "peak_pressure": 403.9407134761185,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 60.00000000000222,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 241.93411661836024,
+      "peak_pressure": 419.81887319928023,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 60.15000000000222,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 250.30945861225553,
+      "peak_pressure": 431.61808525015323,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 60.30000000000223,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 253.48881430832293,
+      "peak_pressure": 449.2821569749198,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 60.450000000002234,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 253.01522535742572,
+      "peak_pressure": 480.875915558731,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 60.60000000000224,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 251.689903254361,
+      "peak_pressure": 508.0244907467667,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 60.750000000002245,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 244.0653783632023,
+      "peak_pressure": 474.38444105383405,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 60.90000000000225,
+      "remaining": 15,
+      "evacuated": 45,
+      "mean_pressure": 233.93923697801878,
+      "peak_pressure": 466.5204159682847,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 61.05000000000226,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 243.4417226604426,
+      "peak_pressure": 484.14204178276657,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 61.20000000000226,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 246.3852662937111,
+      "peak_pressure": 508.2008006493891,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 61.35000000000227,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 252.71972526787766,
+      "peak_pressure": 527.6438173682493,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 61.500000000002274,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 256.5457483660583,
+      "peak_pressure": 533.1985519193348,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 61.65000000000228,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 256.2177179819942,
+      "peak_pressure": 518.0813453040337,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 61.800000000002285,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 253.91382036943781,
+      "peak_pressure": 492.18756383788804,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 61.95000000000229,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 244.73952882885257,
+      "peak_pressure": 461.78967339343956,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 62.1000000000023,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 227.62877668609323,
+      "peak_pressure": 418.58478333903366,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 62.2500000000023,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 213.94844384579878,
+      "peak_pressure": 365.0952026881051,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 62.40000000000231,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 228.46113019174155,
+      "peak_pressure": 479.4058349398052,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 62.55000000000231,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 235.89788216785567,
+      "peak_pressure": 574.3803417867481,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 62.70000000000232,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 218.69566933953976,
+      "peak_pressure": 471.8644643788439,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 62.850000000002325,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 191.5743531826393,
+      "peak_pressure": 331.66177770910235,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 63.00000000000233,
+      "remaining": 14,
+      "evacuated": 46,
+      "mean_pressure": 159.4559302704718,
+      "peak_pressure": 246.15266376935404,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 63.150000000002336,
+      "remaining": 13,
+      "evacuated": 47,
+      "mean_pressure": 173.3283602718966,
+      "peak_pressure": 386.5527669083011,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 63.30000000000234,
+      "remaining": 13,
+      "evacuated": 47,
+      "mean_pressure": 174.74392413620095,
+      "peak_pressure": 412.1168519021659,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 63.45000000000235,
+      "remaining": 13,
+      "evacuated": 47,
+      "mean_pressure": 178.24214750104562,
+      "peak_pressure": 391.6994948789704,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 63.60000000000235,
+      "remaining": 13,
+      "evacuated": 47,
+      "mean_pressure": 186.83560979432696,
+      "peak_pressure": 482.7534878655076,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 63.75000000000236,
+      "remaining": 13,
+      "evacuated": 47,
+      "mean_pressure": 205.64712992116196,
+      "peak_pressure": 591.5655169598193,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 63.900000000002365,
+      "remaining": 13,
+      "evacuated": 47,
+      "mean_pressure": 186.1443402919205,
+      "peak_pressure": 514.1557296283133,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 64.05000000000213,
+      "remaining": 13,
+      "evacuated": 47,
+      "mean_pressure": 167.5643253039974,
+      "peak_pressure": 373.3877498228909,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 64.20000000000142,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 181.36414734604526,
+      "peak_pressure": 308.1198534880608,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 64.35000000000072,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 205.21258333580045,
+      "peak_pressure": 458.14028274368644,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 64.50000000000001,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 219.0266333006746,
+      "peak_pressure": 466.5338210519081,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 64.64999999999931,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 243.6454844395449,
+      "peak_pressure": 519.9542767956043,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 64.7999999999986,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 241.7449131888161,
+      "peak_pressure": 539.3924747648624,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 64.9499999999979,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 226.8236452573342,
+      "peak_pressure": 466.788592022118,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 65.0999999999972,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 213.49955895096397,
+      "peak_pressure": 472.75848345326324,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 65.24999999999649,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 209.50513909031636,
+      "peak_pressure": 551.801134614491,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 65.39999999999579,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 212.45093728976488,
+      "peak_pressure": 647.6208454697289,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 65.54999999999508,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 192.15885392089035,
+      "peak_pressure": 579.067847698373,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 65.69999999999438,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 164.64057150330348,
+      "peak_pressure": 421.92190735258765,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 65.84999999999367,
+      "remaining": 12,
+      "evacuated": 48,
+      "mean_pressure": 140.9840864747259,
+      "peak_pressure": 310.58839278889883,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 65.99999999999297,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 156.47238325623175,
+      "peak_pressure": 364.5030937676183,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 66.14999999999226,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 168.6474318617905,
+      "peak_pressure": 425.8880435806164,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 66.29999999999156,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 187.06180592749124,
+      "peak_pressure": 436.5730754643395,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 66.44999999999085,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 217.81856542434997,
+      "peak_pressure": 554.3103251669247,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 66.59999999999015,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 232.15139098608276,
+      "peak_pressure": 455.81654496755044,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 66.74999999998944,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 237.32009316284575,
+      "peak_pressure": 451.79812645425545,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 66.89999999998874,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 242.69280007143888,
+      "peak_pressure": 515.6375575238595,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 67.04999999998803,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 233.674721166719,
+      "peak_pressure": 577.0346700300977,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 67.19999999998733,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 215.61359422472017,
+      "peak_pressure": 480.48334059471847,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 67.34999999998662,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 212.6367488988828,
+      "peak_pressure": 468.9146389627866,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 67.49999999998592,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 212.2720270997249,
+      "peak_pressure": 476.64024071916356,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 67.64999999998521,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 210.6377942706871,
+      "peak_pressure": 491.15896341418403,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 67.79999999998451,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 206.82123065645393,
+      "peak_pressure": 496.45048940793595,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 67.9499999999838,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 202.37669512932206,
+      "peak_pressure": 471.2663431510187,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 68.0999999999831,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 202.77490786630048,
+      "peak_pressure": 468.56875752823663,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 68.24999999998239,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 202.80459159917783,
+      "peak_pressure": 473.3995563091631,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 68.39999999998169,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 200.9195894663943,
+      "peak_pressure": 468.2670381640069,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 68.54999999998098,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 196.60661061029938,
+      "peak_pressure": 450.57227752316686,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 68.69999999998028,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 189.30445235313002,
+      "peak_pressure": 422.03284145988556,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 68.84999999997957,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 175.07800300043962,
+      "peak_pressure": 358.0287533524556,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 68.99999999997887,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 153.71806432091955,
+      "peak_pressure": 266.751009189386,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 69.14999999997816,
+      "remaining": 11,
+      "evacuated": 49,
+      "mean_pressure": 139.17024894486485,
+      "peak_pressure": 260.2296238718682,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 69.29999999997746,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 162.1864894959734,
+      "peak_pressure": 329.7512987224592,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 69.44999999997675,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 178.2697559998385,
+      "peak_pressure": 371.2531129109058,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 69.59999999997605,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 190.57189406729273,
+      "peak_pressure": 332.015142981118,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 69.74999999997534,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 202.2614385355652,
+      "peak_pressure": 373.0613421786755,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 69.89999999997464,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 216.8517155964317,
+      "peak_pressure": 413.0989236195232,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 70.04999999997393,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 218.62681036332683,
+      "peak_pressure": 453.6414902810096,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 70.19999999997323,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 196.21050031438168,
+      "peak_pressure": 451.9943140104633,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 70.34999999997252,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 190.67520714440815,
+      "peak_pressure": 496.4767134050035,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 70.49999999997182,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 189.89653501594591,
+      "peak_pressure": 485.664185246012,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 70.64999999997112,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 191.03076013812696,
+      "peak_pressure": 455.5028778259002,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 70.79999999997041,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 174.5105641334652,
+      "peak_pressure": 377.69081933204734,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 70.9499999999697,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 154.04678863582117,
+      "peak_pressure": 265.07563473269255,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 71.099999999969,
+      "remaining": 10,
+      "evacuated": 50,
+      "mean_pressure": 144.20273630517804,
+      "peak_pressure": 264.069613276587,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 71.2499999999683,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 151.42887077104768,
+      "peak_pressure": 271.1202623548038,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 71.39999999996759,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 143.58196914986618,
+      "peak_pressure": 259.0599581667267,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 71.54999999996689,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 154.33473585897536,
+      "peak_pressure": 342.79208937969184,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 71.69999999996618,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 172.4189184173821,
+      "peak_pressure": 442.4972227560162,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 71.84999999996548,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 166.19532273571141,
+      "peak_pressure": 382.896719855054,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 71.99999999996477,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 175.28424597981314,
+      "peak_pressure": 350.7512523002002,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 72.14999999996407,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 192.6745724565912,
+      "peak_pressure": 410.1202847838302,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 72.29999999996336,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 202.5954884607875,
+      "peak_pressure": 454.49531489170505,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 72.44999999996266,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 194.8721252031269,
+      "peak_pressure": 428.5147391791406,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 72.59999999996195,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 187.1495241412132,
+      "peak_pressure": 419.5349044941518,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 72.74999999996125,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 187.96990523593524,
+      "peak_pressure": 462.87770640691565,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 72.89999999996054,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 184.93902396623344,
+      "peak_pressure": 492.4881137762334,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 73.04999999995984,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 166.70418699203253,
+      "peak_pressure": 452.29616097833264,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 73.19999999995913,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 140.54029616542581,
+      "peak_pressure": 363.82017669581774,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 73.34999999995843,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 123.9777034575546,
+      "peak_pressure": 288.2997725235769,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 73.49999999995772,
+      "remaining": 9,
+      "evacuated": 51,
+      "mean_pressure": 118.77190718450444,
+      "peak_pressure": 240.97961977559228,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 73.64999999995702,
+      "remaining": 8,
+      "evacuated": 52,
+      "mean_pressure": 121.47678483374443,
+      "peak_pressure": 203.88727049369223,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 73.79999999995631,
+      "remaining": 8,
+      "evacuated": 52,
+      "mean_pressure": 107.52988753134139,
+      "peak_pressure": 157.45788676396046,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 73.94999999995561,
+      "remaining": 8,
+      "evacuated": 52,
+      "mean_pressure": 100.71150967282685,
+      "peak_pressure": 145.79897864274542,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 74.0999999999549,
+      "remaining": 8,
+      "evacuated": 52,
+      "mean_pressure": 106.40092256322413,
+      "peak_pressure": 198.52214322675306,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 74.2499999999542,
+      "remaining": 8,
+      "evacuated": 52,
+      "mean_pressure": 117.04281422922584,
+      "peak_pressure": 257.28216855037465,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 74.3999999999535,
+      "remaining": 8,
+      "evacuated": 52,
+      "mean_pressure": 116.0706307366358,
+      "peak_pressure": 232.64159588172177,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 74.54999999995279,
+      "remaining": 8,
+      "evacuated": 52,
+      "mean_pressure": 118.68882599843414,
+      "peak_pressure": 207.75630977462126,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 74.69999999995208,
+      "remaining": 8,
+      "evacuated": 52,
+      "mean_pressure": 101.24410505932744,
+      "peak_pressure": 175.8446119195575,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 74.84999999995138,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 106.94593267546217,
+      "peak_pressure": 206.1299003850072,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 74.99999999995067,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 106.00398471949595,
+      "peak_pressure": 228.23234997579024,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 75.14999999994997,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 123.30994132234453,
+      "peak_pressure": 274.80847170648946,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 75.29999999994926,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 150.30906084217412,
+      "peak_pressure": 309.37385858177265,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 75.44999999994856,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 150.54265565491292,
+      "peak_pressure": 248.81607939873396,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 75.59999999994785,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 144.10794937304783,
+      "peak_pressure": 228.10186960622732,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 75.74999999994715,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 138.63575290618016,
+      "peak_pressure": 247.93730205295665,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 75.89999999994644,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 131.51077669907198,
+      "peak_pressure": 254.85689350836466,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 76.04999999994574,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 117.95807645020868,
+      "peak_pressure": 214.8683128436466,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 76.19999999994504,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 111.8638821090605,
+      "peak_pressure": 168.5233131145271,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 76.34999999994433,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 121.96138540981504,
+      "peak_pressure": 172.55786056222746,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 76.49999999994363,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 134.2687778056303,
+      "peak_pressure": 201.64592167490846,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 76.64999999994292,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 136.14680637335624,
+      "peak_pressure": 200.03688936804647,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 76.79999999994222,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 138.20795932881393,
+      "peak_pressure": 201.7819054691953,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 76.94999999994151,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 141.38098756110202,
+      "peak_pressure": 205.7940255559132,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 77.0999999999408,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 146.1367834111272,
+      "peak_pressure": 213.2500071581752,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 77.2499999999401,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 147.3755421657531,
+      "peak_pressure": 213.18711778246214,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 77.3999999999394,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 142.59975812825604,
+      "peak_pressure": 202.05163145107701,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 77.54999999993869,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 138.4914083853306,
+      "peak_pressure": 197.80798519097536,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 77.69999999993799,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 137.22846453233544,
+      "peak_pressure": 201.93878760392118,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 77.84999999993728,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 137.07810516996307,
+      "peak_pressure": 209.27517503726938,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 77.99999999993658,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 136.6772861361299,
+      "peak_pressure": 216.17239321001946,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 78.14999999993587,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 136.96236165085233,
+      "peak_pressure": 222.5511835291816,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 78.29999999993517,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 139.10415545517003,
+      "peak_pressure": 232.41670798566523,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 78.44999999993446,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 142.1346519801045,
+      "peak_pressure": 244.94304187694064,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 78.59999999993376,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 143.87591778225652,
+      "peak_pressure": 254.48708483194625,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 78.74999999993305,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 143.37605490978154,
+      "peak_pressure": 258.9347271789222,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 78.89999999993235,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 140.97290329064103,
+      "peak_pressure": 260.20717294091224,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 79.04999999993164,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 135.82881147651563,
+      "peak_pressure": 254.70793821103297,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 79.19999999993094,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 127.34377686251995,
+      "peak_pressure": 237.1976815191337,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 79.34999999993023,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 118.82949686035383,
+      "peak_pressure": 216.55539482681195,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 79.49999999992953,
+      "remaining": 7,
+      "evacuated": 53,
+      "mean_pressure": 114.23491620313473,
+      "peak_pressure": 207.30906076091983,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 79.64999999992882,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 131.43799530856313,
+      "peak_pressure": 210.393688021017,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 79.79999999992812,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 130.95634452240083,
+      "peak_pressure": 223.36189112485556,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 79.94999999992741,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 126.0326298900842,
+      "peak_pressure": 231.85516725452794,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 80.09999999992671,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 113.18784135824876,
+      "peak_pressure": 219.62767247214344,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 80.249999999926,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 98.96542518792317,
+      "peak_pressure": 188.43939440952832,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 80.3999999999253,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 94.33820181507157,
+      "peak_pressure": 163.3622462567623,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 80.5499999999246,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 91.78759425514043,
+      "peak_pressure": 166.3023822671664,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 80.69999999992389,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 103.21477393240343,
+      "peak_pressure": 233.93712500602862,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 80.84999999992318,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 124.07667063785237,
+      "peak_pressure": 311.12247348830317,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 80.99999999992248,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 114.19967806021081,
+      "peak_pressure": 284.3922272843884,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 81.14999999992177,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 95.34653835113585,
+      "peak_pressure": 230.37880019158487,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 81.29999999992107,
+      "remaining": 6,
+      "evacuated": 54,
+      "mean_pressure": 63.58585030626841,
+      "peak_pressure": 137.02878460628577,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 81.44999999992037,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 51.23469307481349,
+      "peak_pressure": 73.71967259258923,
+      "flow_rate": 1.0,
+      "arch_active": false
+    },
+    {
+      "time": 81.59999999991966,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 64.89356860960113,
+      "peak_pressure": 102.3462719358641,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 81.74999999991896,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 125.9304108966785,
+      "peak_pressure": 249.70937133836048,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 81.89999999991825,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 130.37075861924941,
+      "peak_pressure": 258.1887736663938,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 82.04999999991755,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 128.8031762637007,
+      "peak_pressure": 216.4222738643667,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 82.19999999991684,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 155.96145980391265,
+      "peak_pressure": 266.2000426856605,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 82.34999999991614,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 152.9361046373594,
+      "peak_pressure": 296.06455102336076,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 82.49999999991543,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 120.55873799914268,
+      "peak_pressure": 230.39244931707506,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 82.64999999991473,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 110.46285272746734,
+      "peak_pressure": 198.50685785963756,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 82.79999999991402,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 115.74041061979601,
+      "peak_pressure": 205.56433487551232,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 82.94999999991332,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 119.08436293561212,
+      "peak_pressure": 202.02676842982737,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 83.09999999991261,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 113.8595669617409,
+      "peak_pressure": 194.66015938560858,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 83.2499999999119,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 107.63444722831488,
+      "peak_pressure": 192.54743040618322,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 83.3999999999112,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 108.18338086799523,
+      "peak_pressure": 195.52495572096404,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 83.5499999999105,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 114.76850369647767,
+      "peak_pressure": 200.1187181781632,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 83.69999999990979,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 120.33749529199713,
+      "peak_pressure": 211.82976119460062,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 83.84999999990909,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 119.95753839451224,
+      "peak_pressure": 217.19716432223046,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 83.99999999990838,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 110.58706538789234,
+      "peak_pressure": 201.17744723222938,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 84.14999999990768,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 92.54147835898661,
+      "peak_pressure": 163.41760383749386,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 84.29999999990697,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 69.53416461825995,
+      "peak_pressure": 112.56712603981941,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 84.44999999990627,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 50.44597665099454,
+      "peak_pressure": 71.32268433585949,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 84.59999999990556,
+      "remaining": 5,
+      "evacuated": 55,
+      "mean_pressure": 46.408313816439474,
+      "peak_pressure": 79.78628048419937,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 84.74999999990486,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 81.9067319404909,
+      "peak_pressure": 138.5591094197824,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 84.89999999990415,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 108.20803327377615,
+      "peak_pressure": 181.63628377543688,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 85.04999999990345,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 117.48028066167382,
+      "peak_pressure": 170.2973998348605,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 85.19999999990274,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 131.7666008442191,
+      "peak_pressure": 169.77890233878946,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 85.34999999990204,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 132.07207130450234,
+      "peak_pressure": 191.82774692997194,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 85.49999999990133,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 119.1568557483108,
+      "peak_pressure": 179.92402529893673,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 85.64999999990063,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 92.68841104971999,
+      "peak_pressure": 132.7722197104433,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 85.80149999989992,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 72.32292949982403,
+      "peak_pressure": 106.53130824555642,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 85.95149999989921,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 71.06191414856193,
+      "peak_pressure": 121.72797052021059,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 86.10149999989851,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 95.79033766411729,
+      "peak_pressure": 180.4371742792271,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 86.2514999998978,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 100.44720989464238,
+      "peak_pressure": 191.61954131065187,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 86.4014999998971,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 90.54436900578017,
+      "peak_pressure": 171.4308816262621,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 86.5514999998964,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 74.07312354823172,
+      "peak_pressure": 139.88412818760017,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 86.70149999989569,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 50.8144189541017,
+      "peak_pressure": 95.60854751667537,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 86.85149999989498,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 28.241385747352762,
+      "peak_pressure": 52.15734416683015,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 87.00149999989428,
+      "remaining": 4,
+      "evacuated": 56,
+      "mean_pressure": 14.25337973266415,
+      "peak_pressure": 25.92498220595247,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 87.15149999989357,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 9.198962953679322,
+      "peak_pressure": 13.857276523681648,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 87.30149999989287,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 8.505584881778901,
+      "peak_pressure": 12.37028470488814,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 87.45149999989216,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 11.661135828877159,
+      "peak_pressure": 17.009170044701882,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 87.60149999989146,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 28.934845640529403,
+      "peak_pressure": 42.34402976524419,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 87.75149999989075,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 78.8436601612894,
+      "peak_pressure": 115.51708490307078,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 87.90149999989005,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 95.1818081805285,
+      "peak_pressure": 139.40746337405784,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 88.05149999988934,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 69.16377108164376,
+      "peak_pressure": 101.06423176402568,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 88.20149999988864,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 65.71940165295057,
+      "peak_pressure": 95.84326582034362,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 88.35149999988793,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 60.3299997981131,
+      "peak_pressure": 88.05355575732275,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 88.50149999988723,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 59.02225389814398,
+      "peak_pressure": 86.30330872866371,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 88.65149999988652,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 55.433720684479994,
+      "peak_pressure": 81.11891648625291,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 88.80149999988582,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 41.47062431446951,
+      "peak_pressure": 60.66497573860221,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 88.95149999988512,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 28.791024105077753,
+      "peak_pressure": 42.069760504817644,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 89.10149999988441,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 21.714075396984867,
+      "peak_pressure": 31.68355846382424,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 89.2514999998837,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 17.30253673309401,
+      "peak_pressure": 25.216068761821,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 89.401499999883,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 12.077351164325625,
+      "peak_pressure": 17.588171970923927,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 89.5514999998823,
+      "remaining": 3,
+      "evacuated": 57,
+      "mean_pressure": 5.942379905766806,
+      "peak_pressure": 8.646305547796864,
+      "flow_rate": 0.0,
+      "arch_active": false
+    },
+    {
+      "time": 89.70149999988159,
+      "remaining": 2,
+      "evacuated": 58,
+      "mean_pressure": 0.025904171237661158,
+      "peak_pressure": 0.02614123744279486,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 89.85149999988089,
+      "remaining": 2,
+      "evacuated": 58,
+      "mean_pressure": 0.08663997874961488,
+      "peak_pressure": 0.08743287850257722,
+      "flow_rate": 0.5,
+      "arch_active": false
+    },
+    {
+      "time": 90.0,
+      "remaining": 2,
+      "evacuated": 58,
+      "mean_pressure": 0.3102294573263039,
+      "peak_pressure": 0.3130685722894613,
+      "flow_rate": 0.5,
+      "arch_active": false
+    }
+  ],
+  "exit_times": [
+    2.5479941786522646,
+    3.14980784253062,
+    4.358656263525606,
+    5.273383904520526,
+    5.802369245256253,
+    6.437104130366727,
+    7.250227019007359,
+    8.062944697023442,
+    9.140874315391406,
+    10.230194703546042,
+    10.911719243609285,
+    11.695130932637655,
+    12.64153743058551,
+    14.154366512131144,
+    14.919453563753075,
+    15.644033642590967,
+    16.975697144547247,
+    18.278394738038468,
+    18.822418722037384,
+    19.699058993879348,
+    20.828843292043402,
+    21.950571029409378,
+    23.622154213773772,
+    26.084279282964296,
+    27.997505892154273,
+    29.127157382788035,
+    30.031562582583884,
+    30.973815360399442,
+    31.78807759310027,
+    34.275296543980566,
+    35.31410442842318,
+    35.93922012336865,
+    37.37674221501325,
+    38.825600167146746,
+    41.364823093813186,
+    43.54243499255373,
+    45.71455518751077,
+    47.07715979442743,
+    48.14885899472504,
+    48.9373526056215,
+    51.45192659698773,
+    52.85770381032269,
+    55.3977638600141,
+    56.62190521785263,
+    57.61978663436466,
+    61.04479479789722,
+    63.04498522921596,
+    64.16751430847273,
+    65.91342861027827,
+    69.20271287583738,
+    71.20777960696007,
+    73.5679521590828,
+    74.78812033070541,
+    79.53087280587762,
+    81.42926441051385,
+    84.67404562801286,
+    87.05939836814994,
+    89.64902565282785
+  ],
+  "frames": [],
+  "snapshot": {}
+}

@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Keep the published scientific archive, exclude interactive sessions and QA.
+/outputs/*
+!/outputs/data/
+!/outputs/figures/
+!/outputs/empirical/
+!/outputs/README.md
+*.log

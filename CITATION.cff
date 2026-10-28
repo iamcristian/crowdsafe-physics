@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the original HFV article and this software when using the repository."
+title: "CrowdSafe-Physics"
+version: 0.1.0
+date-released: 2026-10-26
+type: software
+license: MIT
+authors:
+  - name: "CrowdSafe-Physics contributors"
+references:
+  - type: article
+    title: "Simulating dynamical features of escape panic"
+    authors:
+      - family-names: Helbing
+        given-names: Dirk
+      - family-names: Farkas
+        given-names: Illés
+      - family-names: Vicsek
+        given-names: Tamás
+    journal: Nature
+    volume: 407
+    start: 487
+    end: 490
+    year: 2000
+    doi: 10.1038/35035023

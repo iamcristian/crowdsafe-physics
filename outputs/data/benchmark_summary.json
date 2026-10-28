@@ -1,0 +1,582 @@
+{
+  "schema_version": 1,
+  "config": {
+    "n_agents": 60,
+    "desired_speed": 5.0,
+    "dt": 0.0015,
+    "duration": 90.0,
+    "sample_interval": 0.15,
+    "seed": 7,
+    "method": "euler",
+    "physics": {
+      "mass": 80.0,
+      "tau": 0.5,
+      "A": 2000.0,
+      "B": 0.08,
+      "k": 120000.0,
+      "kappa": 240000.0,
+      "radius": 0.3,
+      "radius_spread": 0.02,
+      "max_speed": 12.0,
+      "risk_threshold": 1600.0
+    },
+    "room": {
+      "width": 8.0,
+      "height": 8.0,
+      "exit_width": 1.0,
+      "pillars": [],
+      "interior_segments": []
+    }
+  },
+  "evaluation_seeds": [
+    19,
+    23,
+    31
+  ],
+  "training_seeds": [
+    7,
+    11
+  ],
+  "speed_experiment": {
+    "1.0": {
+      "replicates": 3,
+      "censored_runs": 3,
+      "t90": {
+        "mean": 82.23205289822361,
+        "sd": 4.225855835877416,
+        "n_observed": 3
+      },
+      "total_evacuation_time": {
+        "mean": null,
+        "sd": 0.0,
+        "n_observed": 0
+      },
+      "peak_pressure": {
+        "mean": 2097.311442349341,
+        "sd": 289.02213887505326,
+        "n_observed": 3
+      },
+      "mean_pressure": {
+        "mean": 403.3146818828106,
+        "sd": 6.359180422815328,
+        "n_observed": 3
+      },
+      "mean_flow_rate": {
+        "mean": 0.6296296296296297,
+        "sd": 0.025660011963983403,
+        "n_observed": 3
+      },
+      "restricted_mean_evacuation_time": {
+        "mean": 40.72661888368513,
+        "sd": 2.2214509525356783,
+        "n_observed": 3
+      },
+      "exposure_agent_seconds": {
+        "mean": 2.5820000000000256,
+        "sd": 1.4092197309149839,
+        "n_observed": 3
+      },
+      "arch_duration": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "n_observed": 3
+      },
+      "velocity_clamp_count": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "n_observed": 3
+      },
+      "max_pair_overlap": {
+        "mean": 0.0027974165744284094,
+        "sd": 0.00299927027042256,
+        "n_observed": 3
+      },
+      "peak_boundary_inclusive_pressure": {
+        "mean": 2262.2826037201935,
+        "sd": 205.3013505117317,
+        "n_observed": 3
+      }
+    },
+    "2.0": {
+      "replicates": 3,
+      "censored_runs": 0,
+      "t90": {
+        "mean": 41.57107807339771,
+        "sd": 2.2908350437658864,
+        "n_observed": 3
+      },
+      "total_evacuation_time": {
+        "mean": 50.84328522124926,
+        "sd": 2.9703597945720506,
+        "n_observed": 3
+      },
+      "peak_pressure": {
+        "mean": 6014.590752831898,
+        "sd": 323.2959773620977,
+        "n_observed": 3
+      },
+      "mean_pressure": {
+        "mean": 832.5233998274836,
+        "sd": 25.377363653915932,
+        "n_observed": 3
+      },
+      "mean_flow_rate": {
+        "mean": 1.1827012037979694,
+        "sd": 0.0669979229122169,
+        "n_observed": 3
+      },
+      "restricted_mean_evacuation_time": {
+        "mean": 22.95373149494364,
+        "sd": 1.0374169882000264,
+        "n_observed": 3
+      },
+      "exposure_agent_seconds": {
+        "mean": 173.43799999994283,
+        "sd": 15.946445277863926,
+        "n_observed": 3
+      },
+      "arch_duration": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "n_observed": 3
+      },
+      "velocity_clamp_count": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "n_observed": 3
+      },
+      "max_pair_overlap": {
+        "mean": 0.04079992654664899,
+        "sd": 0.00505733549679208,
+        "n_observed": 3
+      },
+      "peak_boundary_inclusive_pressure": {
+        "mean": 6354.257368659694,
+        "sd": 194.58109926939704,
+        "n_observed": 3
+      }
+    },
+    "3.5": {
+      "replicates": 3,
+      "censored_runs": 0,
+      "t90": {
+        "mean": 31.57435479848712,
+        "sd": 2.007134809134536,
+        "n_observed": 3
+      },
+      "total_evacuation_time": {
+        "mean": 38.191778238446126,
+        "sd": 1.4478459133444996,
+        "n_observed": 3
+      },
+      "peak_pressure": {
+        "mean": 12897.33506564134,
+        "sd": 786.6845995400578,
+        "n_observed": 3
+      },
+      "mean_pressure": {
+        "mean": 1531.6092787919326,
+        "sd": 33.14321492786816,
+        "n_observed": 3
+      },
+      "mean_flow_rate": {
+        "mean": 1.5724798220815346,
+        "sd": 0.05898499725975188,
+        "n_observed": 3
+      },
+      "restricted_mean_evacuation_time": {
+        "mean": 18.455918313407743,
+        "sd": 1.7654429708533843,
+        "n_observed": 3
+      },
+      "exposure_agent_seconds": {
+        "mean": 441.2049999999646,
+        "sd": 60.80901210347284,
+        "n_observed": 3
+      },
+      "arch_duration": {
+        "mean": 0.7500000000000284,
+        "sd": 0.7500000000000284,
+        "n_observed": 3
+      },
+      "velocity_clamp_count": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "n_observed": 3
+      },
+      "max_pair_overlap": {
+        "mean": 0.07452578767566927,
+        "sd": 0.006314437874269572,
+        "n_observed": 3
+      },
+      "peak_boundary_inclusive_pressure": {
+        "mean": 12899.5508141619,
+        "sd": 786.7984917532714,
+        "n_observed": 3
+      }
+    },
+    "5.0": {
+      "replicates": 3,
+      "censored_runs": 0,
+      "t90": {
+        "mean": 34.53524330993631,
+        "sd": 6.732939479538918,
+        "n_observed": 3
+      },
+      "total_evacuation_time": {
+        "mean": 38.69532741702526,
+        "sd": 6.502760095217992,
+        "n_observed": 3
+      },
+      "peak_pressure": {
+        "mean": 21477.9466842775,
+        "sd": 1965.632607832695,
+        "n_observed": 3
+      },
+      "mean_pressure": {
+        "mean": 2270.3392817492877,
+        "sd": 61.09579220524186,
+        "n_observed": 3
+      },
+      "mean_flow_rate": {
+        "mean": 1.5817245043933266,
+        "sd": 0.2793410839716099,
+        "n_observed": 3
+      },
+      "restricted_mean_evacuation_time": {
+        "mean": 20.947884237432344,
+        "sd": 4.57586036220929,
+        "n_observed": 3
+      },
+      "exposure_agent_seconds": {
+        "mean": 718.7099999999617,
+        "sd": 185.39888353423143,
+        "n_observed": 3
+      },
+      "arch_duration": {
+        "mean": 4.0500000000001535,
+        "sd": 2.239977678460296,
+        "n_observed": 3
+      },
+      "velocity_clamp_count": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "n_observed": 3
+      },
+      "max_pair_overlap": {
+        "mean": 0.1019747278762399,
+        "sd": 0.009736791512677772,
+        "n_observed": 3
+      },
+      "peak_boundary_inclusive_pressure": {
+        "mean": 24737.119271146352,
+        "sd": 2337.9241905309245,
+        "n_observed": 3
+      }
+    },
+    "7.0": {
+      "replicates": 3,
+      "censored_runs": 0,
+      "t90": {
+        "mean": 36.53702958143784,
+        "sd": 3.2922059762154934,
+        "n_observed": 3
+      },
+      "total_evacuation_time": {
+        "mean": 39.60579269101317,
+        "sd": 3.074385386784293,
+        "n_observed": 3
+      },
+      "peak_pressure": {
+        "mean": 29640.615785764374,
+        "sd": 4918.290535111776,
+        "n_observed": 3
+      },
+      "mean_pressure": {
+        "mean": 3237.005674447178,
+        "sd": 61.646428373268634,
+        "n_observed": 3
+      },
+      "mean_flow_rate": {
+        "mean": 1.5212273322558953,
+        "sd": 0.12227241674156285,
+        "n_observed": 3
+      },
+      "restricted_mean_evacuation_time": {
+        "mean": 22.0883897581736,
+        "sd": 1.3670810881091897,
+        "n_observed": 3
+      },
+      "exposure_agent_seconds": {
+        "mean": 882.4984999999687,
+        "sd": 58.31717783169432,
+        "n_observed": 3
+      },
+      "arch_duration": {
+        "mean": 7.600000000000288,
+        "sd": 2.4753787588974068,
+        "n_observed": 3
+      },
+      "velocity_clamp_count": {
+        "mean": 0.0,
+        "sd": 0.0,
+        "n_observed": 3
+      },
+      "max_pair_overlap": {
+        "mean": 0.14016595614289284,
+        "sd": 0.01019784990086442,
+        "n_observed": 3
+      },
+      "peak_boundary_inclusive_pressure": {
+        "mean": 39012.73641235208,
+        "sd": 8304.255610397815,
+        "n_observed": 3
+      }
+    }
+  },
+  "selected_pillar": {
+    "x": 6.390637014508535,
+    "y": 4.235755214614212,
+    "radius": 0.4585125924617399
+  },
+  "baseline": {
+    "replicates": 3,
+    "censored_runs": 0,
+    "t90": {
+      "mean": 34.53524330993631,
+      "sd": 6.732939479538918,
+      "n_observed": 3
+    },
+    "total_evacuation_time": {
+      "mean": 38.69532741702526,
+      "sd": 6.502760095217992,
+      "n_observed": 3
+    },
+    "peak_pressure": {
+      "mean": 21477.9466842775,
+      "sd": 1965.632607832695,
+      "n_observed": 3
+    },
+    "mean_pressure": {
+      "mean": 2270.3392817492877,
+      "sd": 61.09579220524186,
+      "n_observed": 3
+    },
+    "mean_flow_rate": {
+      "mean": 1.5817245043933266,
+      "sd": 0.2793410839716099,
+      "n_observed": 3
+    },
+    "restricted_mean_evacuation_time": {
+      "mean": 20.947884237432344,
+      "sd": 4.57586036220929,
+      "n_observed": 3
+    },
+    "exposure_agent_seconds": {
+      "mean": 718.7099999999617,
+      "sd": 185.39888353423143,
+      "n_observed": 3
+    },
+    "arch_duration": {
+      "mean": 4.0500000000001535,
+      "sd": 2.239977678460296,
+      "n_observed": 3
+    },
+    "velocity_clamp_count": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "n_observed": 3
+    },
+    "max_pair_overlap": {
+      "mean": 0.1019747278762399,
+      "sd": 0.009736791512677772,
+      "n_observed": 3
+    },
+    "peak_boundary_inclusive_pressure": {
+      "mean": 24737.119271146352,
+      "sd": 2337.9241905309245,
+      "n_observed": 3
+    }
+  },
+  "optimized": {
+    "replicates": 3,
+    "censored_runs": 0,
+    "t90": {
+      "mean": 37.849831718575906,
+      "sd": 4.895926831053432,
+      "n_observed": 3
+    },
+    "total_evacuation_time": {
+      "mean": 41.67508304909335,
+      "sd": 4.995080155603189,
+      "n_observed": 3
+    },
+    "peak_pressure": {
+      "mean": 16016.618969084606,
+      "sd": 1301.0865913844095,
+      "n_observed": 3
+    },
+    "mean_pressure": {
+      "mean": 2211.6102170775075,
+      "sd": 42.826180351432406,
+      "n_observed": 3
+    },
+    "mean_flow_rate": {
+      "mean": 1.4541307814118338,
+      "sd": 0.18100397575577112,
+      "n_observed": 3
+    },
+    "restricted_mean_evacuation_time": {
+      "mean": 23.05303974478341,
+      "sd": 2.9967260011067003,
+      "n_observed": 3
+    },
+    "exposure_agent_seconds": {
+      "mean": 787.6744999999622,
+      "sd": 115.9886950213213,
+      "n_observed": 3
+    },
+    "arch_duration": {
+      "mean": 4.000000000000152,
+      "sd": 2.933001875212604,
+      "n_observed": 3
+    },
+    "velocity_clamp_count": {
+      "mean": 0.0,
+      "sd": 0.0,
+      "n_observed": 3
+    },
+    "max_pair_overlap": {
+      "mean": 0.10823089124653003,
+      "sd": 0.015326005643015705,
+      "n_observed": 3
+    },
+    "peak_boundary_inclusive_pressure": {
+      "mean": 17037.85776101064,
+      "sd": 2121.017478766632,
+      "n_observed": 3
+    }
+  },
+  "paired_changes": [
+    {
+      "seed": 19,
+      "pressure_reduction_percent": 20.71946476344124,
+      "mean_pressure_reduction_percent": 7.4800010624428985,
+      "flow_improvement_percent": 23.049894588896723
+    },
+    {
+      "seed": 23,
+      "pressure_reduction_percent": 35.4713956774674,
+      "mean_pressure_reduction_percent": -1.1281584229221764,
+      "flow_improvement_percent": -25.434951045995668
+    },
+    {
+      "seed": 31,
+      "pressure_reduction_percent": 18.766595656338502,
+      "mean_pressure_reduction_percent": 1.168733524533172,
+      "flow_improvement_percent": -14.018721965806424
+    }
+  ],
+  "peak_pressure_reduction_percent": 25.427606258054215,
+  "mean_pressure_reduction_percent": 2.5867968344594594,
+  "flow_improvement_percent": -8.066747567423672,
+  "hypotheses": {
+    "faster_is_slower_t90_7_vs_2": false,
+    "peak_pressure_reduction_above_25_percent": true,
+    "mean_pressure_reduction_above_25_percent": false,
+    "faster_outflow": false,
+    "faster_is_slower_t90_7_vs_3_5": true
+  },
+  "convergence": {
+    "baseline": {
+      "dt": 0.0015,
+      "half_dt": 0.00075,
+      "coarse": {
+        "n_agents": 60,
+        "evacuated": 60,
+        "observed_time": 44.650500000001635,
+        "t90": 40.9004031361452,
+        "total_evacuation_time": 44.650036616798474,
+        "censored": false,
+        "restricted_mean_evacuation_time": 25.651258777426072,
+        "peak_pressure": 22015.01138428277,
+        "mean_pressure": 2337.9986260616706,
+        "peak_boundary_inclusive_pressure": 22352.267670628833,
+        "exposure_agent_seconds": 913.6829999999171,
+        "mean_flow_rate": 1.3437699465850954,
+        "velocity_clamp_count": 0,
+        "max_pair_overlap": 0.11236097373172721,
+        "arch_duration": 6.600000000000249,
+        "longest_arch": 2.850000000000107,
+        "arch_episodes": 6
+      },
+      "fine": {
+        "n_agents": 60,
+        "evacuated": 60,
+        "observed_time": 45.963749999935565,
+        "t90": 41.39353480586873,
+        "total_evacuation_time": 45.96300571177916,
+        "censored": false,
+        "restricted_mean_evacuation_time": 24.0052264284788,
+        "peak_pressure": 21993.11318007125,
+        "mean_pressure": 2262.47824478664,
+        "peak_boundary_inclusive_pressure": 22313.1699928249,
+        "exposure_agent_seconds": 830.3594999999616,
+        "mean_flow_rate": 1.3053765195416847,
+        "velocity_clamp_count": 0,
+        "max_pair_overlap": 0.11242619468263959,
+        "arch_duration": 5.850000000000222,
+        "longest_arch": 3.1500000000001194,
+        "arch_episodes": 6
+      }
+    },
+    "optimized": {
+      "dt": 0.0015,
+      "half_dt": 0.00075,
+      "coarse": {
+        "n_agents": 60,
+        "evacuated": 60,
+        "observed_time": 36.28650000000132,
+        "t90": 32.57628396941763,
+        "total_evacuation_time": 36.28546032788707,
+        "censored": false,
+        "restricted_mean_evacuation_time": 19.703485857635325,
+        "peak_pressure": 17453.618857848724,
+        "mean_pressure": 2163.116303992357,
+        "peak_boundary_inclusive_pressure": 19166.35122661374,
+        "exposure_agent_seconds": 655.4999999999686,
+        "mean_flow_rate": 1.6535075027902337,
+        "velocity_clamp_count": 0,
+        "max_pair_overlap": 0.12068733685317745,
+        "arch_duration": 0.7500000000000284,
+        "longest_arch": 0.30000000000001137,
+        "arch_episodes": 3
+      },
+      "fine": {
+        "n_agents": 60,
+        "evacuated": 60,
+        "observed_time": 35.66249999998397,
+        "t90": 31.6381255799298,
+        "total_evacuation_time": 35.66218055259767,
+        "censored": false,
+        "restricted_mean_evacuation_time": 18.903859727967063,
+        "peak_pressure": 17562.994550466065,
+        "mean_pressure": 2153.3832709673693,
+        "peak_boundary_inclusive_pressure": 19189.007746028994,
+        "exposure_agent_seconds": 631.4407499999759,
+        "mean_flow_rate": 1.6824395373298835,
+        "velocity_clamp_count": 0,
+        "max_pair_overlap": 0.12064245643094179,
+        "arch_duration": 1.5000000000000568,
+        "longest_arch": 0.7500000000000284,
+        "arch_episodes": 4
+      }
+    }
+  },
+  "provenance": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41"
+  }
+}
